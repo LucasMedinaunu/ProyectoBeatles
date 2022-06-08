@@ -1,0 +1,24 @@
+/*                Footer             */ 
+footer{
+    grid-area: footer;
+    text-align: center;
+    
+    .footerFacebook{
+        width: 5%;
+    }
+    .footerInstagram{
+        width: 5%;
+    }
+    .footerSpotify{
+        width: 5%;
+    }
+    .footerTwitter{
+        width: 5%;
+    }
+    .footerYoutube{
+        width: 5%;
+    }
+    .footerGmail{
+        width: 5%;
+    }
+}

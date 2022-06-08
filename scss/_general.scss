@@ -1,0 +1,47 @@
+/*               Estilos Generales            */
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*         Menu         */ 
+#gridArea{
+    display: grid;
+    grid-template-areas: 
+         "header"
+         "texto_e_imagenes"
+         "footer"
+         ;
+         grid-template-columns: 100%;
+         grid-template-rows: 1fr 2fr 2fr 1fr;
+         row-gap: 1%;
+         
+    .header{
+            grid-area: header;
+        }
+        
+    .beatlesNav{
+            display: flex;
+            width: 100%;
+    }
+    
+    .logo{
+        width: 30%;
+        margin-left: 10%;
+        height: 10vh;
+    }
+    
+    .imgLogo{
+        width: 100%;
+    }
+    
+    .linksNav{
+        margin-top: 10%;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}

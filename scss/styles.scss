@@ -1,144 +1,27 @@
-// Variables
+@import "./vars";
+@import "./general";
+@import "./body";
+@import "./pages_Content";
+@import "./footer";
+@import "./mediaQueries";
 
-//
-/*               Estilos Generales            */
-*{
-	margin: 0;
-	padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-/*           Estilos Body            */ 
-body{
-    color: black;
-    background-color: white;
-	font-size: clamp(0.9rem, 4vw, 1.5rem);
-}
-/*         Menu         */ 
-#gridArea{
-    display: grid;
-    grid-template-areas: 
-         "header"
-         "texto_e_imagenes"
-         "footer"
-         ;
-         grid-template-columns: 100%;
-         grid-template-rows: 1fr 2fr 2fr 1fr;
-         row-gap: 1%;
-         
-    .header{
-            grid-area: header;
-        }
-        
-    .beatlesNav{
-            display: flex;
-            width: 100%;
-    }
-    
-    .logo{
-        width: 30%;
-        margin-left: 10%;
-        height: 10vh;
-    }
-    
-    .imgLogo{
-        width: 100%;
-    }
-    
-    .linksNav{
-        margin-top: 10%;
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-    }
-}
+
+
 
 
     
 
 
 
-/*         Texto e Imagenes        */ 
-#texto_e_imagenes{
-    grid-area: texto_e_imagenes;
-    
-h1,h2,h3,h4,h5{
-        font-size: clamp(0.9rem, 4vw, 1.5rem);
-    }
-    .imgLennon{
-        width: 25%;
-    }
-    .imgPaulMccartney{
-        width: 25%;
-    }
-    .imgHarrison{
-        width: 25%;
-    }
-    .imgRingo{
-        width: 25%;
-    }
-}
-
-/*                  Formulario Contacto               */
 
 
 
 
 
 
-/*                Footer             */ 
-footer{
-    grid-area: footer;
-    text-align: center;
-    
-    .footerFacebook{
-        width: 5%;
-    }
-    .footerInstagram{
-        width: 5%;
-    }
-    .footerSpotify{
-        width: 5%;
-    }
-    .footerTwitter{
-        width: 5%;
-    }
-    .footerYoutube{
-        width: 5%;
-    }
-    .footerGmail{
-        width: 5%;
-    }
-}
 
 
 
-/*            Media Queries              */
 
-              /* Celular */
-@media only screen and (max-width: 480px){
-      body{
-    background-color: tomato;
-    }
-    .beatlesNav{
-        flex-direction: column;
-    }
-    .linksNav{
-        flex-direction: column;
-        align-items: center;
-    }
-}
-              /* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 1023px){
-    body{
-        background-color: turquoise;
-    }
-    
-}
-            /* Desktop */
-@media only screen and (min-width: 1024px){
-    body{
-        background-color: white;
-    }
-}
+
+
