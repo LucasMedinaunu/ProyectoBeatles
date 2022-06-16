@@ -2,19 +2,24 @@
 #texto_e_imagenes{
     grid-area: texto_e_imagenes;
     
-h1,h2,h3,h4,h5{
-        font-size: clamp(0.9rem, 4vw, 1.5rem);
+h1,h5{
+    color: $colorTitulos;
+    font-family: $fuenteMenu;
+    font-size: clamp(0.9rem, 4vw, 1.5rem);
     }
     .imgLennon{
-        width: 25%;
+        width: 75%;
     }
-    .imgPaulMccartney{
-        width: 25%;
-    }
-    .imgHarrison{
-        width: 25%;
-    }
-    .imgRingo{
-        width: 25%;
+    
+}
+
+/*             Productos           */
+
+#productsList{
+    grid-area: productsList;
+    h2,h3,h4{
+        color: $colorTitulos;
+        font-family: $fuenteMenu;
+        font-size: clamp(0.9rem, 4vw, 1.5rem);
     }
 }
