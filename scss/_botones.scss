@@ -1,0 +1,24 @@
+/*         Botones         */
+.boton{
+    background-color: brown;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+
+    &:hover{
+        filter: opacity(85%);
+    }
+}
+
+.botonRojo{
+    @extend .boton;
+    background-color: red;
+    color: blue;
+}
+
+.botonVerde{
+    @extend .boton;
+    background-color: green;
+    color: blue;
+}

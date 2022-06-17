@@ -6,12 +6,6 @@
   text-decoration: none;
   list-style: none; }
 
-/*           Estilos Body            */
-body {
-  color: black;
-  background-color: white;
-  font-size: clamp(0.9rem, 4vw, 1.5rem); }
-
 /*         Menu         */
 #gridArea {
   display: grid;
@@ -36,24 +30,87 @@ body {
     width: 100%;
     justify-content: space-evenly; }
 
+/*           Estilos Body            */
+body {
+  color: black;
+  background-color: white;
+  font-size: clamp(0.9rem, 4vw, 1.5rem); }
+
+/*         Botones         */
+.boton, .botonRojo, .botonVerde {
+  background-color: brown;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black; }
+  .boton:hover, .botonRojo:hover, .botonVerde:hover {
+    filter: opacity(85%); }
+
+.botonRojo {
+  background-color: red;
+  color: blue; }
+
+.botonVerde {
+  background-color: green;
+  color: blue; }
+
 /*         Texto e Imagenes        */
 #texto_e_imagenes {
   grid-area: texto_e_imagenes; }
-  #texto_e_imagenes h1, #texto_e_imagenes h2, #texto_e_imagenes h3, #texto_e_imagenes h4, #texto_e_imagenes h5 {
+  #texto_e_imagenes h1, #texto_e_imagenes h5 {
+    color: black;
+    font-family: "Roboto", sans-serif;
     font-size: clamp(0.9rem, 4vw, 1.5rem); }
   #texto_e_imagenes .imgLennon {
-    width: 25%; }
-  #texto_e_imagenes .imgPaulMccartney {
-    width: 25%; }
-  #texto_e_imagenes .imgHarrison {
-    width: 25%; }
-  #texto_e_imagenes .imgRingo {
-    width: 25%; }
+    width: 75%; }
+
+/*             Productos           */
+#productsList {
+  grid-area: productsList; }
+  #productsList h2, #productsList h3, #productsList h4 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(0.9rem, 4vw, 1.5rem); }
+
+/*         Mixins          */
+.letraChica {
+  font-size: 1rem;
+  font-weight: 100; }
+
+.letraMediana {
+  font-size: 2rem;
+  font-weight: 500; }
+
+.letraGrande {
+  font-size: 3rem;
+  font-weight: 700; }
+
+/*             Maps          */
+.botonFacebook {
+  color: rgba(0, 89, 255, 0.884); }
+
+.botonInstagram {
+  color: rgba(218, 7, 172, 0.753); }
+
+.botonSpotify {
+  color: #135702; }
+
+.botonTwitter {
+  color: #297deb; }
+
+.botonYoutube {
+  color: red; }
+
+.botonGmail {
+  color: rgba(119, 3, 3, 0.774); }
 
 /*                Footer             */
 footer {
   grid-area: footer;
   text-align: center; }
+  footer h1 {
+    font-size: 3rem;
+    font-weight: 700; }
   footer .footerFacebook {
     width: 5%; }
   footer .footerInstagram {

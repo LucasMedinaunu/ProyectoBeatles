@@ -1,0 +1,28 @@
+/*             Maps          */
+$redes:(
+    "Facebook": rgba(0, 89, 255, 0.884),
+    "Instagram":rgba(218, 7, 172, 0.753),
+    "Spotify": rgb(19, 87, 2),
+    "Twitter": rgb(41, 125, 235),
+    "Youtube":red,
+    "Gmail":rgba(119, 3, 3, 0.774),
+);
+
+.botonFacebook{
+    color: map-get($map: $redes, $key:Facebook );
+}
+.botonInstagram{
+    color: map-get($map: $redes, $key:Instagram );
+}
+.botonSpotify{
+    color: map-get($map: $redes, $key:Spotify );
+}
+.botonTwitter{
+    color: map-get($map: $redes, $key:Twitter );
+}
+.botonYoutube{
+    color: map-get($map: $redes, $key:Youtube );
+}
+.botonGmail{
+    color: map-get($map: $redes, $key:Gmail );
+}
