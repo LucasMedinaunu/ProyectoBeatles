@@ -67,7 +67,7 @@ body {
 /*             Productos           */
 #productsList {
   grid-area: productsList; }
-  #productsList h2, #productsList h3, #productsList h4 {
+  #productsList h1, #productsList h2, #productsList h3, #productsList h4 {
     color: black;
     font-family: "Roboto", sans-serif;
     font-size: clamp(0.9rem, 4vw, 1.5rem); }

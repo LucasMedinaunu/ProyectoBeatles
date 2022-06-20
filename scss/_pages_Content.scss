@@ -17,7 +17,7 @@ h1,h5{
 
 #productsList{
     grid-area: productsList;
-    h2,h3,h4{
+    h1,h2,h3,h4{
         color: $colorTitulos;
         font-family: $fuenteMenu;
         font-size: clamp(0.9rem, 4vw, 1.5rem);
