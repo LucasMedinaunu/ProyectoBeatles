@@ -6,9 +6,10 @@ h1,h5{
     color: $colorTitulos;
     font-family: $fuenteMenu;
     font-size: clamp(0.9rem, 4vw, 1.5rem);
+    text-align: center;
     }
     .imgLennon{
-        width: 75%;
+        width: 100%;
     }
     
 }
@@ -22,4 +23,30 @@ h1,h5{
         font-family: $fuenteMenu;
         font-size: clamp(0.9rem, 4vw, 1.5rem);
     }
+}
+
+/*            Blog              */ 
+.clear{
+    clear: both;
+}
+#contenidoBlog{
+   float: left;
+   width: calc(80% - 80px);
+   background: white;
+   min-height: 500px;
+   padding: 40px;
+}
+.articulos{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid black;
+}
+aside{
+    float: left;
+    width: calc(20% - 20px);
+    min-height: 500px;
+    background: white;
+    padding: 10px;
 }

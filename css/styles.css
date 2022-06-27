@@ -12,7 +12,8 @@
   grid-template-areas: "header" "texto_e_imagenes" "footer";
   grid-template-columns: 100%;
   grid-template-rows: 1fr 2fr 2fr 1fr;
-  row-gap: 1%; }
+  row-gap: 1%;
+  height: 10px; }
   #gridArea .header {
     grid-area: header; }
   #gridArea .beatlesNav {
@@ -60,9 +61,10 @@ body {
   #texto_e_imagenes h1, #texto_e_imagenes h5 {
     color: black;
     font-family: "Roboto", sans-serif;
-    font-size: clamp(0.9rem, 4vw, 1.5rem); }
+    font-size: clamp(0.9rem, 4vw, 1.5rem);
+    text-align: center; }
   #texto_e_imagenes .imgLennon {
-    width: 75%; }
+    width: 100%; }
 
 /*             Productos           */
 #productsList {
@@ -71,6 +73,31 @@ body {
     color: black;
     font-family: "Roboto", sans-serif;
     font-size: clamp(0.9rem, 4vw, 1.5rem); }
+
+/*            Blog              */
+.clear {
+  clear: both; }
+
+#contenidoBlog {
+  float: left;
+  width: calc(80% - 80px);
+  background: white;
+  min-height: 500px;
+  padding: 40px; }
+
+.articulos {
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid black; }
+
+aside {
+  float: left;
+  width: calc(20% - 20px);
+  min-height: 500px;
+  background: white;
+  padding: 10px; }
 
 /*         Mixins          */
 .letraChica {
@@ -106,19 +133,20 @@ body {
 
 /*                Footer             */
 footer {
+  height: auto;
   grid-area: footer;
   text-align: center; }
   footer h1 {
     font-size: 3rem;
     font-weight: 700; }
   footer .footerFacebook {
-    width: 5%; }
+    width: 4%; }
   footer .footerInstagram {
-    width: 5%; }
+    width: 4%; }
   footer .footerSpotify {
-    width: 5%; }
+    width: 4%; }
   footer .footerTwitter {
-    width: 5%; }
+    width: 4%; }
   footer .footerYoutube {
     width: 5%; }
   footer .footerGmail {
