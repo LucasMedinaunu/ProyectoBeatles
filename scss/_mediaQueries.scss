@@ -13,11 +13,19 @@
                   flex-direction: column;
                   align-items: center;
               }
+              .columnaIzquierda, .columnaDerecha{
+                width: 100%;
+                padding: 0;
+              }
           }
                         /* Tablet */
           @media only screen and (min-width: 481px) and (max-width: 1023px){
               body{
                   background-color: turquoise;
+              }
+              .columnaIzquierda, .columnaDerecha{
+                width: 100%;
+                padding: 0;
               }
               
           }
