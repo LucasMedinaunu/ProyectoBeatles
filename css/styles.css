@@ -9,7 +9,9 @@
 /*         Menu         */
 #gridArea {
   display: grid;
-  grid-template-areas: "header" "texto_e_imagenes" "footer";
+  grid-template-areas: "header"
+ "texto_e_imagenes"
+ "footer";
   grid-template-columns: 100%;
   grid-template-rows: 1fr 2fr 2fr 1fr;
   row-gap: 1%;
@@ -64,40 +66,52 @@ body {
     font-size: clamp(0.9rem, 4vw, 1.5rem);
     text-align: center; }
   #texto_e_imagenes .imgLennon {
-    width: 100%; }
+    width: 100%; 
+    text-align: center; }
 
 /*             Productos           */
 #productsList {
-  grid-area: productsList; }
+  grid-area: texto_e_imagenes; }
   #productsList h1, #productsList h2, #productsList h3, #productsList h4 {
     color: black;
     font-family: "Roboto", sans-serif;
-    font-size: clamp(0.9rem, 4vw, 1.5rem); }
+    font-size: clamp(0.9rem, 4vw, 1.5rem);
+    align-items: center; }
 
-/*            Blog              */
-.clear {
-  clear: both; }
+/*           Blog          */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; }
 
-#contenidoBlog {
-  float: left;
-  width: calc(80% - 80px);
-  background: white;
-  min-height: 500px;
-  padding: 40px; }
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; }
 
-.articulos {
-  color: black;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 0.5px solid black; }
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); }
 
-aside {
-  float: left;
-  width: calc(20% - 20px);
-  min-height: 500px;
-  background: white;
-  padding: 10px; }
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black; }
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg); }
 
 /*         Mixins          */
 .letraChica {
@@ -161,12 +175,18 @@ footer {
     flex-direction: column; }
   .linksNav {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .columnaIzquierda, .columnaDerecha {
+    width: 100%;
+    padding: 0; } }
 
 /* Tablet */
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   body {
-    background-color: turquoise; } }
+    background-color: turquoise; }
+  .columnaIzquierda, .columnaDerecha {
+    width: 100%;
+    padding: 0; } }
 
 /* Desktop */
 @media only screen and (min-width: 1024px) {
